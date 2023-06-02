@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    /*    viewport units: vh (view-height), vw (view-width) vmin(smallest btw vh and vw */
+    /* vmin ex: 50vmin would take 50% of smallest of vh and vw */
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+header {
+    font-size: 4vmin;
+    color: red;
+    /*      new */
+    letter-spacing: 1vmin;
+}
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 10vmin);
+    grid-template-rows: repeat(3, 10vmin);
+    gap: 1vmin;
+}
+h4 {
+    color: green;
+    padding-bottom: 5px;
+    margin-top: 2px;
+}
+h1 {
+    font-size: 3vmin;
+    color: green;
+}
+#board > div {
+    /* border-radius: 50%; */
+    border: 0.1vmin solid grey;
+}
+button {
+    margin-top: 4vmin;
+    padding: 2vmin;
+    font-size: 2vmin;
+    border-radius: 4vmin;
+    border: 0.1vmin solid grey;
+    color: gray;
+}button:hover {
+    color: white;
+    background-color: red;
+}
+
+#board > div:hover {
+    background-color:green;
+}
+
+
+
