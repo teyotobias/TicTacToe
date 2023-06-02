@@ -37,6 +37,13 @@ h1 {
 #board > div {
     /* border-radius: 50%; */
     border: 0.1vmin solid grey;
+    font-size: 3rem;
+    display: flex;
+    font-weight: 500;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
 button {
     margin-top: 4vmin;
@@ -50,9 +57,6 @@ button {
     background-color: red;
 }
 
-#board > div:hover {
-    background-color:green;
-}
 
 
 
